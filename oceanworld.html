@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>meadow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta description="my description">
+    <link rel="stylesheet" type="text/css" href="./css/myStyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="oceanworldbackground">
+
+
+   
+   
+    <div id="visual-novel">
+        <img id="scene-image" src="./img/ope1.png" alt="Scene Image">
+        
+        <img id="prev-button" src="./img/arrowbackward1.png" alt="Previous" onclick="prevPage()">
+        <img id="next-button" src="./img/arrowforward1.png" alt="Next" onclick="nextPage()">
+    </div>
+    
+ 
+
+    <!-- Include your script.js file separately -->
+    <script src="script.js"></script>
+
+    <script>
+        // Your inline script here (if any)
+        let currentPage = 0;
+        const storyContent = [
+            { image: './img/ope1.png'},
+            { image: './img/ope2.png'},
+            { image: './img/ope3.png'},
+            { image: './img/ope4.png'},
+            { image: './img/ope5.png'},
+            { image: './img/ope6.png'},
+            { image: './img/ope7.png'},
+            { image: './img/ope8.png'},
+            { image: './img/ope9.png'},
+            { image: './img/ope10.png'},
+            { image: './img/ope11.png'},
+            { image: './img/ope12.png'},
+            { image: './img/ope13.png'},
+            { image: './img/ope14.png'},
+            { image: './img/ope15.png'},
+            { image: './img/ope16.png'},
+            { image: './img/ope17.png'},
+            { image: './img/ope18.png'},
+            { image: './img/ope19.png'},
+            { image: './img/ope20.png'},
+            { image: './img/ope21.png'},
+            { image: './img/ope22.png'},
+            { image: './img/ope23.png'},
+            { image: './img/ope24.png'},
+            { image: './img/ope25.png'},
+            { image: './img/ope26.png'},
+            { image: './img/ope27.png'},
+            { image: './img/ope28.png'},
+            { image: './img/ope29.png'},
+            { image: './img/ope30.png'},
+            { image: './img/ope31.png'},
+            { image: './img/ope32.png'},
+            { image: './img/ope33.png'},
+            { image: './img/ope34.png'},
+           
+            // Add more pages as needed
+        ];
+
+        function updatePage() {
+    document.getElementById('scene-image').src = storyContent[currentPage].image;
+    document.getElementById('story-text').innerText = storyContent[currentPage].text;
+
+    // Remove all buttons within #visual-novel
+    const existingButtons = document.querySelectorAll('#visual-novel button');
+    existingButtons.forEach(button => button.remove());
+
+    // Create a button element for image number 4
+    if (currentPage === 3) {
+        const customButton = document.createElement('button');
+        customButton.textContent = 'Extra Button'; // Set button text
+
+        // Add an event listener or any other customization for the extra button
+        customButton.addEventListener('click', () => {
+            // Add the functionality for the extra button here
+            console.log('Extra button clicked!');
+        });
+
+        // Append the extra button to the #visual-novel div
+        document.getElementById('visual-novel').appendChild(customButton);
+    }
+
+    // Add event listeners or any other customization for your existing buttons here
+    const existingPrevButton = document.getElementById('prev-button');
+    existingPrevButton.addEventListener('click', prevPage);
+
+    const existingNextButton = document.getElementById('next-button');
+    existingNextButton.addEventListener('click', nextPage);
+}
+
+function nextPage() {
+    if (currentPage < storyContent.length - 1) {
+        currentPage++;
+        updatePage();
+    }
+}
+
+function prevPage() {
+    if (currentPage > 0) {
+        currentPage--;
+        updatePage();
+    }
+}
+
+// Initial page load
+updatePage();
+
+        
+    </script>
+</body>
+
+</html>

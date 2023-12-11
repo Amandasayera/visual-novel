@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>meadow</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="my description">
+  <link rel="stylesheet" type="text/css" href="./css/myStyle.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body class="biomebackground">
+
+
+      
+  <div id="grow1" class="growig1"><img src="./img/green1.png" width="700px" height="160px"/>
+    <img src="./img/green2.png" width="700px" height="160px" style="display:none"/>
+    <h2></h2>
+    </div>
+
+  <div class="sundarban">
+    <a href="sundrabansdoor.html">
+      <img src="./img/sundarbanbutton.png" width="250px" height="270px"/>
+    </a>
+  </div>
+
+
+  <div class="freshwater">
+    <a href="pigeondoor.html">
+      <img src="./img/freshbutton.png" width="335px" height="302px"/>
+    </a>
+  </div>
+
+
+ 
+
+
+
+  <div class="corn">
+    <a href="apocalypse.html">
+      <img src="./img/aboutbutton.png" width="177px" height="141px"/>
+    </a>
+  </div>
+
+
+
+  <div class="forest">
+    <a href="door.html">
+      <img src="./img/forestbutton.png" width="455px" height="268px"/>
+    </a>
+  </div>
+
+
+ 
+
+ 
+
+  <div class="ocean">
+    <a href="oceandoor.html">
+      <img src="./img/oceanbutton.png" width="250px" height="270px"/>
+    </a>
+    <span class="tooltip">.</span>
+    <audio class="audio-player">
+      <source src=".///audio/beach.mp3" type="audio/mp3" />
+    </audio>
+  </div>
+
+
+
+  <script>
+    $(document).ready(function() {
+      $("#grow1").click(function() {
+        $(this).find('img').toggle();
+      });
+    });
+  </script>
+  
+  
+  
+  <script src="tooltip.js"></script>
+
+
+
+  
+
+
+
+</body>
+</html>

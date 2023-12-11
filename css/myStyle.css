@@ -1,0 +1,517 @@
+
+        
+        
+               .biomebackground {
+                width: 1528px;
+                height: 700px;
+                background-image: url("../img/biomes.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+              }
+              
+              .wormworldbackground {
+                width: 1000px;
+                height: 13000px;
+                background-image: url("../img/wormworld.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+              }
+
+              .oceanbackground {
+                background-color: black;
+              }
+
+              .pigeon2background {
+                width: 1000px;
+                height: 13000px;
+                background-image: url("../img/template.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+              }
+
+              .sketchbackground {
+                width: 1000px;
+                height: 13000px;
+                background-image: url("../img/skurr.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: fixed;
+              }
+              
+              .doorbackground {
+                width: 1200px;
+                height: 1014px;
+                background-image: url("../img/door.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+
+              .duva1background {
+                width: 2000px;
+                height: 4000px;
+                background-image: url("../img/duva1.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              
+              .duva2background {
+                width: 1000px;
+                height: 1000px;
+                background-image: url("../img/duva2.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+
+              .sundarbandoorbackground {
+                width: 1200px;
+                height: 1014px;
+                background-image: url("../img/doormud.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .oceandoorbackground {
+                width: 1200px;
+                height: 1014px;
+                background-image: url("../img/doorocean.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .pigeondoorbackground {
+                width: 1200px;
+                height: 1014px;
+                background-image: url("../img/doorpigeon.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+              .mudskipperbackground {
+                background-color: rgb(27, 38, 5);
+              }
+
+            
+              
+              .growbackground {
+                width: 800px;
+                height: 800px;
+                background-image: url("../img/growtest.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+              
+              .shroomnobackground {
+                width: 1200px;
+                height: 1014px;
+                background-image: url("../img/shroomno.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+              
+              .meadowbackground {
+                width: 12200px;
+                height: 1000px;
+                background-image: url("../img/meadow3.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+              }
+
+            
+
+
+              /* styles.css */
+.oceanworldbackground {
+  font-family: 'Arial', sans-serif;
+}
+
+#visual-novel {
+  text-align: center;
+}
+
+#scene-image {
+
+  width: 1560px; 
+  height: 740px;/* Adjust as needed */
+}
+
+#prev-button {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1; /* Ensure buttons are on top of the image */
+}
+
+#next-button {
+  position: absolute;
+  top: 50%;
+  right: 0; /* Set the right position */
+  z-index: 1; /* Ensure buttons are on top of the image */
+}
+
+#prev-button img,
+#next-button img {
+  display: block; /* Ensure the image is treated as a block element */
+}
+
+
+
+
+              
+              
+              div.door {
+                position: absolute;
+                left: 540px;
+                top: 150px;
+              }
+
+                
+          
+              div.growig1 {
+                position: absolute;
+                left: 406px;
+                top: 300px;
+              }
+
+
+
+
+              
+              div.shroomyes {
+                position: absolute;
+                left: 11750px;
+                top: 450px;
+              }
+              
+              .shroomyes:hover {
+                animation: grow 0.3s ease-in-out;
+                transform: scale(1.1);
+              }
+
+
+             
+              
+              div.shroomno {
+                position: absolute;
+                left: 11950px;
+                top: 450px;
+              }
+              
+              .shroomno:hover {
+                animation: grow 0.3s ease-in-out;
+                transform: scale(1.1);
+              }
+
+              div.sketches {
+                position: absolute;
+                left: 1100px;
+                top: 500px;
+              }
+              
+              div.sundarban {
+                position: absolute;
+                left: 180px;
+                top: 50px;
+              }
+
+              .sundarban:hover {
+                animation: spin 15s linear infinite;
+              }
+              
+              div.sundarban::after {
+                content: "Isn't moist such a lovely word?";
+                position: absolute;
+                top: 100%;
+                left: 10%;
+                transform: translateX(-50%);
+                background-color: #929292;
+                color: #1e1e1e;
+                padding: 1.5px;
+                border-radius: 0px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                font-family: "Arial", sans-serif;
+                font-style: italic;
+              }
+              
+              div.sundarban:hover::after {
+                opacity: 1;
+                visibility: visible;
+              }
+              
+              div.freshwater {
+                position: absolute;
+                left: 840px;
+                top: 10px;
+              }
+              
+              .freshwater:hover {
+                animation: spin 15s linear infinite;
+              }
+
+              div.freshwater::after {
+                content: "coo coo";
+                position: absolute;
+                top: 100%;
+                left: 10%;
+                transform: translateX(-50%);
+                background-color: #929292;
+                color: #1e1e1e;
+                padding: 1.5px;
+                border-radius: 0px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                font-family: "Arial", sans-serif;
+                font-style: italic;
+              }
+              
+              div.freshwater:hover::after {
+                opacity: 1;
+                visibility: visible;
+              }
+              
+              div.desert {
+                position: absolute;
+                left: 900px;
+                top: 50px;
+              }
+              
+              .desert:hover {
+                animation: spin 7s linear infinite;
+              }
+
+              div.corn {
+                position: absolute;
+                left: 1350px;
+                top: 50px;
+              }
+              
+              .corn:hover {
+                animation: spin 7s linear infinite;
+              }
+
+              
+              div.forest {
+                position: absolute;
+                left: 200px;
+                top: 460px;
+              }
+              
+              .forest:hover {
+                animation: spin 25s linear infinite;
+              }
+
+              div.forest::after {
+                content: "come on in, the soil is warm";
+                position: absolute;
+                top: 100%;
+                left: 10%;
+                transform: translateX(-50%);
+                background-color: #929292;
+                color: #1e1e1e;
+                padding: 1.5px;
+                border-radius: 0px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                font-family: "Arial", sans-serif;
+                font-style: italic;
+              }
+              
+              div.forest:hover::after {
+                opacity: 1;
+                visibility: visible;
+              }
+
+
+
+              
+              
+              div.ocean {
+                position: absolute;
+                left: 940px;
+                top: 460px;
+              }
+              
+              div.ocean::after {
+                content: "play me";
+                position: absolute;
+                top: 100%;
+                left: 5%;
+                transform: translateX(-50%);
+                background-color: #929292;
+                color: #1e1e1e;
+                padding: 1.5px;
+                border-radius: 0px;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.3s, visibility 0.3s;
+                font-family: "Arial", sans-serif;
+                font-style: italic;
+              }
+              
+              div.ocean:hover::after {
+                opacity: 1;
+                visibility: visible;
+              }
+              
+              audio.audio-player {
+                display: none;
+              }
+              
+              div.wormhole {
+                position: absolute;
+                left: 7600px;
+                top: 550px;
+              }
+              
+              .wormhole:hover {
+                animation: grow 0.3s ease-in-out;
+                transform: scale(1.1);
+              }
+              
+              @keyframes spin {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+              
+              @keyframes grow {
+                0% {
+                  transform: scale(1);
+                }
+                100% {
+                  transform: scale(1.1);
+                }
+              }
+              
+              .carousel-container {
+                max-width: 800px;
+                margin: 0 auto;
+              }
+              
+              .thumbnails {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+              }
+              
+              .thumbnails img {
+                width: 100px; /* Adjust the size of the thumbnail images */
+                height: 100px;
+                margin: 0 10px;
+                cursor: pointer;
+              }
+              
+              .main-carousel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 80vh; /* Adjust the height as desired */
+              }
+
+              .main-carousel img {
+                max-width: 100%;
+                height:80vh;
+                display: none;
+              }
+              
+              /* Add additional CSS styling as desired */
+
+
+              .oceanbackground {
+                margin: 0;
+                overflow: hidden;
+              }
+              
+              #ocean-container {
+                height: 100vh;
+                overflow-y: scroll;
+                scrollbar-width: thin;
+                scrollbar-color: transparent transparent;
+                padding-right: 12px;
+                font-size: 0; /* Add this line to remove the spacing between images */
+              }
+
+              #ocean-container img {
+                filter: brightness(1.3);
+                transition: filter 0.9s ease;
+                margin: 0; /* Add this line to remove the margin */
+              }
+              
+              #ocean-container::-webkit-scrollbar {
+                width: 6px;
+              }
+              
+              #ocean-container::-webkit-scrollbar-thumb {
+                background-color: transparent;
+              }
+              
+              #ocean-container::-webkit-scrollbar-track {
+                background-color: transparent;
+              }
+
+
+
+              .pigeonbackground {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: #000000;
+              }
+              
+              .container {
+                text-align: center;
+              }
+              
+              h1 {
+                margin-bottom: 20px;
+                color:rgb(0, 255, 8);
+                font-family: "Courier New", monospace;
+              }
+              
+              input[type="password"] {
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 200px;
+              }
+              
+              button {
+                padding: 10px 20px;
+                background-color: #000000;
+                color: rgb(0, 255, 8);
+                border: none;
+                cursor: pointer;
+              }
+              
+              
+      .dog2:hover {
+        animation: wobble 0.5s infinite;
+      }
+      
+      @keyframes wobble {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.005) rotate(-0.25deg); }
+        50% { transform: scale(0.995) rotate(0.25deg); }
+        75% { transform: scale(1.0025) rotate(-0.125deg); }
+        100% { transform: scale(1); }
+      }
+
+      #ocean-container img:last-child {
+        display: block;
+        margin: 0 auto;
+      }
