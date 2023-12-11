@@ -148,16 +148,7 @@ function create() {
     const buttonGroup3 = this.add.group();
     buttonGroup3.add(button3);
     buttonGroup3.add(buttonText3);
-
-
-
-
-   
 }
-
-
-
-
 
 
 function createText(x, y, content) {
